@@ -1,12 +1,12 @@
-import Link from "../src/components/Link";
-import PageTitle from "../src/components/PageTitle";
+// import Link from "../src/components/Link";
+// import PageTitle from "../src/components/PageTitle";
+import FaqScreen from "../src/screens/FaqScreen";
 
-
-// SSG - Static Site Generation
+export default FaqScreen;
 // SSR - Serever Side Rendering
 // ISG - Incremental Static Generation
 
-// export async function getServerSideProps(){
+//     export async function getServerSideProps(){
 //     console.log('Em modo DEV, sempre roda! A cada acesso')
 //     console.log('Rodando a cada acesso que recebe')
 
@@ -29,30 +29,30 @@ export async function getStaticProps() {
     };
 }
 
-export default function FaqPage({ faq }) {
-    //console.log(faq);
-    // const [faq, setFaq] = useState([]);
-    // useEffect(() => {
-    // }, []);
+// export default function FaqPage({ faq }) {
+//     //console.log(faq);
+//     // const [faq, setFaq] = useState([]);
+//     // useEffect(() => {
+//     // }, []);
 
-    return (
-        <div>
-              <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
-            <h1>Alura Casaes - Página de Perguntas FAQ</h1>
-            <Link href="/">
-                Ir para a Home
-            </Link>
-            <ul>
-                {faq.map(({ answer, question }) => (
-                    <li key={question}>
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
+//     return (
+//         <div>
+//               <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
+//             <h1>Alura Casaes - Página de Perguntas FAQ</h1>
+//             <Link href="/">
+//                 Ir para a Home
+//             </Link>
+//             <ul>
+//                 {faq.map(({ answer, question }) => (
+//                     <li key={question}>
+//                         <article>
+//                             <h2>{question}</h2>
+//                             <p>{answer}</p>
+//                         </article>
 
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     )
+// }
